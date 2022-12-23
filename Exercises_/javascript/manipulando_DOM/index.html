@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de casas</title>
+    <script src="DOM.js"></script>
+</head>
+<body>
+    <h1>Registro de residência</h1>
+    <br>
+    <br>
+    <form id="registro">
+        <p>
+            <label>Número da casa: </label>
+            <br>
+            <input type="text" name="numero_casa" id="numero_casa"/>
+        </p>
+
+        <p>
+            <label>Bairro </label>
+            <br>
+            <input type="text" name="bairro"/>
+        </p>
+
+        <p>
+            <label>Cidade: </label>
+            <br>
+            <input type="text" name="cidade"/>
+        </p>
+
+        <p>
+            <label>Área da casa: </label>
+            <br>
+            <input type="text" name="area_casa"/>
+        </p>
+
+        <button onclick="saveRegister()" type="button">Registrar casa</button>
+    </form>
+
+    <ul id="listar-casas"></ul> <!--elemento vazio aqui, sem conteudo para ser listao depois pelo js-->
+</body>
+</html>
